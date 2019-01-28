@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --config webpack.dev.config.js",
-    "start": "webpack-dev-server --config webpack.dev.config.js --process --hot --mode development",
-    "dist": "webpack --config webpack.production.config.js"
+    "start": "webpack-dev-server --config webpack.dev.config.js --process --hot ",
+    "dist": "webpack --config webpack.pro.config.js"
   },
   "author": "",
   "license": "ISC",
@@ -38,7 +38,8 @@
     "uglifyjs-webpack-plugin": "^2.1.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.28.4",
-    "webpack-dev-server": "^3.1.14"
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "react": "^16.7.0",
