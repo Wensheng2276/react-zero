@@ -74,7 +74,8 @@ module.exports = {
             public: path.join(__dirname, 'src/public'),
             component: path.join(__dirname, 'src/component'),
             router: path.join(__dirname, 'src/router'),
-
+            themes: path.join(__dirname, 'src/themes'),
+            node_modules: path.join(__dirname, 'node_modules'),
         }
     }
 };

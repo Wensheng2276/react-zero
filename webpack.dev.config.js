@@ -45,7 +45,16 @@ module.exports = merge(common, {
         rules: [
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader?modules', "postcss-loader"] // ?modules - 开启模块化的另一种方式
+                use: [
+                    'style-loader',
+                    {
+                        loader: "css-loader",
+                        options:{
+                            modules: true,
+                        }
+                    },
+                    "postcss-loader"
+                ] // ?modules - 开启模块化的另一种方式
             },
             {
                 test: /\.less$/,
@@ -65,7 +74,7 @@ module.exports = merge(common, {
                             ident: 'prostcss',
                             sourceMap: true,
                             plugins: [
-                                require("autoprefixer")({browsers: ['>0.15% in CN']})
+                                require("autoprefixer")({browsers: "last 5 version"})
                             ]
                         }
                     },

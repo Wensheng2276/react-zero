@@ -34,6 +34,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^3.0.0",
     "react-hot-loader": "^4.5.3",
+    "spdy": "^4.0.0",
     "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^2.1.1",
     "url-loader": "^1.1.2",
@@ -42,10 +43,20 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
+    "antd": "^3.15.0",
+    "debug": "^4.1.1",
+    "import-local": "^2.0.0",
+    "ip": "^1.1.5",
+    "lodash": "^4.17.11",
+    "opn": "^6.0.0",
+    "portfinder": "^1.0.20",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-grid-layout": "^0.16.6",
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "webpack": "^4.29.6",
+    "yargs": "^13.2.2"
   }
 }
