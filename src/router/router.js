@@ -8,7 +8,7 @@ import Page1 from 'pages/Page1/Page1';
 const getRouter = () => (
     <Router>
         <div>
-            <ul>
+            <ul style={{marginBottom: "30px"}}>
                 <li><Link to="/">首页</Link></li>
                 <li><Link to="/page1">Page1</Link></li>
             </ul>

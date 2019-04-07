@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import {AppContainer} from 'react-hot-loader';
-import 'babel-polyfill';
-// import {Provider} from 'react-redux';
-// import store from './redux/store';
+// import 'babel-polyfill';
+// 引入重置样式表
+import './themes/reset.less';
 
 import getRouter from 'router/router';
 

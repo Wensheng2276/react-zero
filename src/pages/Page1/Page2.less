@@ -1,15 +1,26 @@
-@font-face { font-family: 方正正中黑简体; src: url('/font/方正正中黑简体.ttf'); }
+
+@import '~themes/default.less';
+
 .A {
     :global {
-        .page-box {
-            border: 1px solid #5B83AD;
-            transform: translateX(20px);
-            border-radius: 25px;
-            background: url('/images/02.jpg');
-            height: 102px;
-            font-family: 方正正中黑简体;
-
-            /* 测试code */
+        .page-box{
+            border: 3px solid @primary-color;
+            color: @primary-color;
+            border-radius: 20px;
+            // background: url('/images/02.jpg');
+            // height: 102px;
+            // font-family: 方正正中黑简体;
+            padding: 30px;
+            user-select: none;
+            .iconfont{
+                color: red;
+                font-weight: bold;
+                transition: all 1s;
+                font-size: 50px;
+                &:hover{
+                    opacity: .8;
+                }
+            }
         }
     }
 }
